@@ -1,0 +1,146 @@
+[
+  {
+    "id": "grain_farming",
+    "building_type": "grain_farm",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "tools", "quantity": 0.01 }
+    ],
+    "outputs": [
+      { "good_id": "grain", "quantity": 10.0 }
+    ],
+    "labor": { "worker_count": 4, "profession": "farmer", "min_skill": 0.0 },
+    "cycle_duration": 24.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "milling",
+    "building_type": "windmill",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "grain", "quantity": 5.0 }
+    ],
+    "outputs": [
+      { "good_id": "flour", "quantity": 4.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "miller", "min_skill": 0.0 },
+    "cycle_duration": 4.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "baking",
+    "building_type": "bakery",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "flour", "quantity": 2.0 },
+      { "good_id": "charcoal", "quantity": 1.0 }
+    ],
+    "outputs": [
+      { "good_id": "bread", "quantity": 8.0 }
+    ],
+    "labor": { "worker_count": 2, "profession": "baker", "min_skill": 0.0 },
+    "cycle_duration": 2.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "iron_smelting",
+    "building_type": "smelter",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "iron_ore", "quantity": 3.0 },
+      { "good_id": "charcoal", "quantity": 2.0 }
+    ],
+    "outputs": [
+      { "good_id": "pig_iron", "quantity": 2.0 }
+    ],
+    "labor": { "worker_count": 3, "profession": "smelter", "min_skill": 0.0 },
+    "cycle_duration": 6.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "smithing",
+    "building_type": "blacksmith",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "pig_iron", "quantity": 1.0 },
+      { "good_id": "charcoal", "quantity": 0.5 }
+    ],
+    "outputs": [
+      { "good_id": "tools", "quantity": 2.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "blacksmith", "min_skill": 0.1 },
+    "cycle_duration": 3.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "charcoal_burning",
+    "building_type": "charcoal_kiln",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "logs", "quantity": 3.0 }
+    ],
+    "outputs": [
+      { "good_id": "charcoal", "quantity": 2.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "laborer", "min_skill": 0.0 },
+    "cycle_duration": 8.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "sawing",
+    "building_type": "sawmill",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "logs", "quantity": 2.0 }
+    ],
+    "outputs": [
+      { "good_id": "planks", "quantity": 3.0 }
+    ],
+    "labor": { "worker_count": 2, "profession": "laborer", "min_skill": 0.0 },
+    "cycle_duration": 3.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "tailoring",
+    "building_type": "tailor_shop",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "fabric", "quantity": 2.0 }
+    ],
+    "outputs": [
+      { "good_id": "clothes", "quantity": 1.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "tailor", "min_skill": 0.1 },
+    "cycle_duration": 6.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "weaving",
+    "building_type": "weaver",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "fiber", "quantity": 3.0 }
+    ],
+    "outputs": [
+      { "good_id": "fabric", "quantity": 2.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "weaver", "min_skill": 0.0 },
+    "cycle_duration": 4.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "brick_making",
+    "building_type": "brick_kiln",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "clay", "quantity": 4.0 },
+      { "good_id": "charcoal", "quantity": 1.0 }
+    ],
+    "outputs": [
+      { "good_id": "bricks", "quantity": 3.0 }
+    ],
+    "labor": { "worker_count": 2, "profession": "laborer", "min_skill": 0.0 },
+    "cycle_duration": 6.0,
+    "base_efficiency": 1.0
+  }
+]

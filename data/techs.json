@@ -1,0 +1,100 @@
+[
+  {
+    "id": "golem_crafting",
+    "name": "Golem Crafting",
+    "era": "agrarian",
+    "prerequisites": [],
+    "research_cost": 100.0,
+    "effects": [
+      { "effect_type": "unlock_building", "target_id": "golem_workshop", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "improved_roads",
+    "name": "Improved Roads",
+    "era": "agrarian",
+    "prerequisites": [],
+    "infrastructure_required": ["sawmill"],
+    "research_cost": 50.0,
+    "effects": [
+      { "effect_type": "unlock_road", "target_id": "gravel_road", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "cart_tracks",
+    "name": "Cart Tracks",
+    "era": "agrarian",
+    "prerequisites": ["improved_roads"],
+    "infrastructure_required": ["blacksmith"],
+    "research_cost": 80.0,
+    "effects": [
+      { "effect_type": "unlock_road", "target_id": "cart_track", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "animal_husbandry",
+    "name": "Animal Husbandry",
+    "era": "agrarian",
+    "prerequisites": [],
+    "research_cost": 60.0,
+    "effects": [
+      { "effect_type": "hauler_capacity_bonus", "target_id": "hauler", "value": 1.5 }
+    ]
+  },
+  {
+    "id": "crop_rotation",
+    "name": "Crop Rotation",
+    "era": "agrarian",
+    "prerequisites": [],
+    "infrastructure_required": ["grain_farm"],
+    "research_cost": 40.0,
+    "effects": [
+      { "effect_type": "production_bonus", "target_id": "grain_farming", "value": 1.25 }
+    ]
+  },
+  {
+    "id": "basic_masonry",
+    "name": "Basic Masonry",
+    "era": "agrarian",
+    "prerequisites": [],
+    "infrastructure_required": ["stone_quarry"],
+    "research_cost": 50.0,
+    "effects": [
+      { "effect_type": "unlock_building", "target_id": "stone_house", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "steam_power",
+    "name": "Steam Power",
+    "era": "earlyIndustrial",
+    "prerequisites": ["cart_tracks"],
+    "infrastructure_required": ["smelter"],
+    "research_cost": 200.0,
+    "effects": [
+      { "effect_type": "unlock_building", "target_id": "steam_engine", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "pipeline_engineering",
+    "name": "Pipeline Engineering",
+    "era": "earlyIndustrial",
+    "prerequisites": ["steam_power"],
+    "infrastructure_required": ["blacksmith"],
+    "research_cost": 150.0,
+    "effects": [
+      { "effect_type": "unlock_building", "target_id": "pipeline", "value": 1.0 }
+    ]
+  },
+  {
+    "id": "railway_engineering",
+    "name": "Railway Engineering",
+    "era": "earlyIndustrial",
+    "prerequisites": ["steam_power", "cart_tracks"],
+    "infrastructure_required": ["smelter", "blacksmith"],
+    "research_cost": 300.0,
+    "effects": [
+      { "effect_type": "unlock_road", "target_id": "rail", "value": 1.0 },
+      { "effect_type": "unlock_building", "target_id": "rail_depot", "value": 1.0 }
+    ]
+  }
+]
