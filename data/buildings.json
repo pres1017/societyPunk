@@ -332,5 +332,26 @@
     "storage_capacity": 0.0,
     "warehouse_radius": 0,
     "housing_capacity": 0
+  },
+  {
+    "id": "golem_workshop",
+    "name": "Golem Workshop",
+    "role": "magic",
+    "era_required": "agrarian",
+    "required_profession": "alchemist",
+    "max_workers": 2,
+    "footprint_x": 2,
+    "footprint_y": 2,
+    "construction_cost": [
+      { "good_id": "stone", "quantity": 20.0 },
+      { "good_id": "pig_iron", "quantity": 10.0 },
+      { "good_id": "planks", "quantity": 10.0 }
+    ],
+    "construction_time": 60,
+    "maintenance_cost": 0.8,
+    "available_recipes": ["produce_magical_essence", "craft_golem_core"],
+    "storage_capacity": 0.0,
+    "warehouse_radius": 0,
+    "housing_capacity": 0
   }
 ]

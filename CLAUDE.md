@@ -100,6 +100,7 @@ If asked to act as an orchestrator:
 - [ ] No hardcoded Good IDs, Recipe names, or Building types in C# code
 - [ ] JSON serialization round-trips correctly for all new models
 - [ ] NUnit tests pass headlessly for all new systems
-- [ ] All five production chains represented where applicable
+- [ ] All five (for now) production chains represented where applicable
+- [ ] Changes can be tested directly in Godot through the default scene
 - [ ] Layer 3 stubs present and untouched
 - [ ] No Layer 2 or Layer 3 logic implemented

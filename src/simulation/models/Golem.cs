@@ -1,5 +1,15 @@
 namespace SocietyPunk.Simulation.Models;
 
+public enum GolemPhase
+{
+    MovingToPickup,
+    Loading,
+    MovingToDelivery,
+    Unloading,
+    SeekingEssence,
+    Idle
+}
+
 /// <summary>
 /// A magical construct that performs automated hauling on a fixed route.
 /// Not a pop — no needs, no morale, no schedule.
@@ -12,6 +22,9 @@ public class Golem
 
     // Route
     public GolemRoute? AssignedRoute { get; set; }
+
+    // Phase
+    public GolemPhase Phase { get; set; } = GolemPhase.Idle;
 
     // Cargo
     public float CarryCapacity { get; set; } = 15.0f;

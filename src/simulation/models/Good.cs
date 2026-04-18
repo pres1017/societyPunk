@@ -13,6 +13,8 @@ public class Good
     public bool IsPerishable { get; set; }
     public float SpoilageRate { get; set; }
     public Era EraRequired { get; set; }
+    public bool IsFood { get; set; }
+    public float FoodValue { get; set; }
 
     // LAYER 3 STUB — not used in Layer 1
     public float BasePrice { get; set; }

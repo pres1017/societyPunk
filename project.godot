@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SocietyPunk"
-run/main_scene="uid://drf2jm5708l11"
+run/main_scene="res://src/godot/scenes/game_scene.tscn"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 

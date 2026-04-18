@@ -142,5 +142,36 @@
     "labor": { "worker_count": 2, "profession": "laborer", "min_skill": 0.0 },
     "cycle_duration": 6.0,
     "base_efficiency": 1.0
+  },
+  {
+    "id": "produce_magical_essence",
+    "building_type": "golem_workshop",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "charcoal", "quantity": 2.0 },
+      { "good_id": "iron_ore", "quantity": 1.0 }
+    ],
+    "outputs": [
+      { "good_id": "magical_essence", "quantity": 1.0 }
+    ],
+    "labor": { "worker_count": 1, "profession": "alchemist", "min_skill": 0.0 },
+    "cycle_duration": 4.0,
+    "base_efficiency": 1.0
+  },
+  {
+    "id": "craft_golem_core",
+    "building_type": "golem_workshop",
+    "era_required": "agrarian",
+    "inputs": [
+      { "good_id": "magical_essence", "quantity": 3.0 },
+      { "good_id": "pig_iron", "quantity": 2.0 },
+      { "good_id": "stone", "quantity": 5.0 }
+    ],
+    "outputs": [
+      { "good_id": "golem_core", "quantity": 1.0 }
+    ],
+    "labor": { "worker_count": 2, "profession": "alchemist", "min_skill": 0.1 },
+    "cycle_duration": 8.0,
+    "base_efficiency": 1.0
   }
 ]
